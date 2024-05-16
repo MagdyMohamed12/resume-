@@ -1,0 +1,131 @@
+
+.container{
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    background-color: rgb(149, 159, 159);
+    grid-template-columns:auto  ;
+    grid-template-rows: auto  1fr auto;
+    word-wrap:break-word;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(58, 57, 57);
+    color: white;
+    grid-column: 1 /span 2;
+    padding:10px 0 10px 10px ;
+    font-style: italic;
+    font-size: 25px;
+        
+    }
+#pic{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.img{
+ float: right;
+ border:3px solid black;
+ padding: 5px 0px 10px 10px;
+ 
+}
+.container2{
+grid-area: 2/2;
+padding-left: 15px;
+border: 3px solid black;
+font-weight: bold;
+
+
+}
+.info{
+    padding: 10px;
+    padding-left: 15px;
+
+}
+.sec1{
+    color: rgb(2, 107, 177);
+    
+}
+.sec2{
+    color: rgb(255, 211, 141);
+    text-shadow: 5px 9px 2px #153448;
+}
+.footer{
+    grid-area: 3/ span  2 ;
+    display: flex ;
+    justify-content: center;
+    align-content: center;
+    border: 3px solid black;
+    font-weight: bold;
+    padding: 10px;
+}
+.footer>.sec1{
+    padding:0 30px 30px 30px ;
+    
+}
+.bi{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    -webkit-animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(32px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+}
+.CERTIFICAT{
+    cursor: pointer;
+    
+   
+}
+a:hover {
+    color: blue;
+    background-color: transparent;
+   
+}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
