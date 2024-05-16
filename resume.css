@@ -1,21 +1,26 @@
 
+
+body{
+    background-color: rgb(149, 159, 159);
+   
+}
 .container{
-    width: 100%;
     display: grid;
     gap: 5px;
-    background-color: rgb(149, 159, 159);
-    grid-template-columns:auto  ;
-    grid-template-rows: auto  1fr auto;
-    word-wrap:break-word;
+    grid-template-columns: auto auto  auto;
+    grid-template-rows: auto auto ;
+    min-width: 390px;
+    max-width: 1700px;
+    
+    
 }
+
 .header{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    text-align: center;
     background-color: rgb(58, 57, 57);
-    color: white;
-    grid-column: 1 /span 2;
-    padding:10px 0 10px 10px ;
+    color: white;   
+    grid-column: 1 /span 4;
+    padding:10px 0px 10px 10px ;
     font-style: italic;
     font-size: 25px;
         
@@ -26,18 +31,24 @@
     -moz-border-radius:50%;
     -ms-border-radius:50%;
     -o-border-radius:50%;
+   
 }
 .img{
- float: right;
- border:3px solid black;
- padding: 5px 0px 10px 10px;
+    
+    border:3px solid black;
+    padding: 5px 0px 10px 0px;
+    float: left;
+ 
  
 }
 .container2{
-grid-area: 2/2;
-padding-left: 15px;
+grid-area: 2/2 ;
+padding-left: 10px;
 border: 3px solid black;
 font-weight: bold;
+min-width: fit-content;
+
+
 
 
 }
@@ -55,13 +66,17 @@ font-weight: bold;
     text-shadow: 5px 9px 2px #153448;
 }
 .footer{
-    grid-area: 3/ span  2 ;
+   
     display: flex ;
     justify-content: center;
     align-content: center;
     border: 3px solid black;
     font-weight: bold;
     padding: 10px;
+    min-width: fit-content;
+    
+    
+
 }
 .footer>.sec1{
     padding:0 30px 30px 30px ;
